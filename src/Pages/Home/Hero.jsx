@@ -7,13 +7,23 @@ import { useTheme } from '../../contexts/ThemeContext';
 const Hero = () => {
     const { isDark } = useTheme();
     
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+    
     return (
         <div className={`min-h-screen flex items-center justify-center py-20 transition-all duration-300 ${
             isDark 
                 ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' 
                 : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'
         }`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-11/12 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
                     
                     {/* Left Side - Content */}
@@ -104,7 +114,9 @@ const Hero = () => {
                                 <span>Download Resume</span>
                             </a>
                             
-                            <button className={`inline-flex items-center space-x-2 px-8 py-4 backdrop-blur-sm font-semibold rounded-full border transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl ${
+                            <button 
+                                onClick={() => scrollToSection('projects')}
+                                className={`inline-flex items-center space-x-2 px-8 py-4 backdrop-blur-sm font-semibold rounded-full border transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl ${
                                 isDark 
                                     ? 'bg-gray-800/80 text-gray-200 border-gray-600/50 hover:border-blue-400/50 hover:bg-gray-700/90' 
                                     : 'bg-white/80 text-gray-700 border-gray-200/50 hover:border-blue-300/50 hover:bg-white/90'
@@ -116,28 +128,28 @@ const Hero = () => {
 
                         {/* Social Links */}
                         <div className="flex justify-center lg:justify-start space-x-4">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
+                            <a href="https://github.com/Saif-Smran" target="_blank" rel="noopener noreferrer" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
                                 isDark 
                                     ? 'bg-gray-800/60 border-gray-600/50 text-gray-300 hover:text-gray-100 hover:border-blue-400/50' 
                                     : 'bg-white/60 border-gray-200/50 text-gray-600 hover:text-gray-400 hover:border-blue-300/50'
                             }`}>
                                 <FaGithub className="w-5 h-5" />
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
+                            <a href="https://www.linkedin.com/in/a-h-m-saif-smran" target="_blank" rel="noopener noreferrer" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
                                 isDark 
                                     ? 'bg-gray-800/60 border-gray-600/50 text-gray-300 hover:text-blue-400 hover:border-blue-400/50' 
                                     : 'bg-white/60 border-gray-200/50 text-gray-600 hover:text-blue-400 hover:border-blue-300/50'
                             }`}>
                                 <FaLinkedin className="w-5 h-5" />
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
+                            <a href="https://x.com/Soron_Hosain" target="_blank" rel="noopener noreferrer" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
                                 isDark 
                                     ? 'bg-gray-800/60 border-gray-600/50 text-gray-300 hover:text-blue-300 hover:border-blue-400/50' 
                                     : 'bg-white/60 border-gray-200/50 text-gray-600 hover:text-blue-300 hover:border-blue-300/50'
                             }`}>
                                 <FaTwitter className="w-5 h-5" />
                             </a>
-                            <a href="mailto:your.email@example.com" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
+                            <a href="mailto:smrangb@gmail.com" className={`p-3 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-110 ${
                                 isDark 
                                     ? 'bg-gray-800/60 border-gray-600/50 text-gray-300 hover:text-red-400 hover:border-blue-400/50' 
                                     : 'bg-white/60 border-gray-200/50 text-gray-600 hover:text-red-400 hover:border-blue-300/50'

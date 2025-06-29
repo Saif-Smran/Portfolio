@@ -19,22 +19,24 @@ const Footer = () => {
   // const { isDark } = useTheme(); // Footer uses dark theme by default
 
   const socialLinks = [
-    { name: 'GitHub', icon: FaGithub, href: '#', color: 'hover:text-gray-900' },
-    { name: 'LinkedIn', icon: FaLinkedin, href: '#', color: 'hover:text-blue-600' },
-    { name: 'Twitter', icon: FaTwitter, href: '#', color: 'hover:text-blue-400' },
-    { name: 'Email', icon: FaEnvelope, href: 'mailto:your.email@example.com', color: 'hover:text-red-500' },
+    { name: 'GitHub', icon: FaGithub, href: 'https://github.com/Saif-Smran', color: 'hover:text-gray-900' },
+    { name: 'LinkedIn', icon: FaLinkedin, href: 'https://www.linkedin.com/in/a-h-m-saif-smran', color: 'hover:text-blue-600' },
+    { name: 'Twitter', icon: FaTwitter, href: 'https://x.com/Soron_Hosain', color: 'hover:text-blue-400' },
+    { name: 'Email', icon: FaEnvelope, href: 'mailto:smrangb@gmail.com', color: 'hover:text-red-500' },
   ];
 
   const quickLinks = [
     { name: 'About', href: '#about', icon: FaUser },
+    { name: 'Education', href: '#education', icon: FaProjectDiagram },
+    { name: 'Tech Stack', href: '#techstack', icon: FaCode },
     { name: 'Projects', href: '#projects', icon: FaProjectDiagram },
     { name: 'Contact', href: '#contact', icon: FaEnvelope },
   ];
 
   const contactInfo = [
-    { icon: FaEnvelope, text: 'your.email@example.com', href: 'mailto:your.email@example.com' },
-    { icon: FaPhone, text: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-    { icon: FaMapMarkerAlt, text: 'Your City, Country', href: '#' },
+    { icon: FaEnvelope, text: 'smrangb@gmail.com', href: 'mailto:smrangb@gmail.com' },
+    { icon: FaMapMarkerAlt, text: 'Dhaka, Bangladesh', href: '#' },
+    { icon: FaLinkedin, text: 'linkedin.com/in/a-h-m-saif-smran', href: 'https://www.linkedin.com/in/a-h-m-saif-smran' },
   ];
 
   const scrollToTop = () => {
@@ -45,9 +47,13 @@ const Footer = () => {
   };
 
   const handleNavClick = (href) => {
-    const element = document.querySelector(href);
+    const sectionId = href.replace('#', '');
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
@@ -87,6 +93,8 @@ const Footer = () => {
                     <a
                       key={social.name}
                       href={social.href}
+                      target={social.href.startsWith('http') ? '_blank' : undefined}
+                      rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                       className={`p-3 rounded-full bg-white/10 backdrop-blur-sm ${social.color} transition-all duration-300 hover:scale-110 hover:bg-white/20 group`}
                       aria-label={social.name}
                     >
@@ -132,6 +140,8 @@ const Footer = () => {
                     <li key={index}>
                       <a
                         href={contact.href}
+                        target={contact.href.startsWith('http') ? '_blank' : undefined}
+                        rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                         className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-all duration-300 group"
                       >
                         <div className="p-2 rounded-lg bg-white/10 group-hover:bg-blue-500/20 transition-colors duration-300">
@@ -172,7 +182,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 text-gray-300">
               <span>© {currentYear} Made with</span>
               <FaHeart className="text-red-400 animate-pulse" />
-              <span>by MyPortfolio</span>
+              <span>by A.H.M. Saif Smran</span>
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">

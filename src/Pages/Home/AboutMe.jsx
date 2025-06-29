@@ -33,11 +33,11 @@ const AboutMe = () => {
   ];
 
   const skills = [
-    { name: "C/C++", level: 45, color: "bg-blue-500" },
+    { name: "C/C++", level: 65, color: "bg-blue-500" },
     { name: "JavaScript", level: 75, color: "bg-yellow-500" },
     { name: "React", level: 70, color: "bg-cyan-500" },
-    { name: "Node.js", level: 45, color: "bg-green-500" },
-    { name: "MongoDB", level: 40, color: "bg-green-600" },
+    { name: "Node.js", level: 65, color: "bg-green-500" },
+    { name: "MongoDB", level: 60, color: "bg-green-600" },
     { name: "Problem Solving", level: 60, color: "bg-purple-500" }
   ];
 
@@ -47,7 +47,7 @@ const AboutMe = () => {
         ? 'bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900' 
         : 'bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-11/12 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className={`text-4xl lg:text-5xl font-bold mb-4 ${
             isDark ? 'text-white' : 'text-gray-900'
@@ -169,7 +169,7 @@ const AboutMe = () => {
         <div className="mt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { number: "1+", label: "Years Learning", color: "text-blue-500" },
+              { number: "1.5+", label: "Years Learning", color: "text-blue-500" },
               { number: "3+", label: "Projects Built", color: "text-green-500" },
               { number: "5+", label: "Technologies", color: "text-purple-500" },
               { number: "∞", label: "Passion for Code", color: "text-red-500" }

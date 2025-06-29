@@ -1,0 +1,112 @@
+[
+  {
+    "name": "App-Store",
+    "image": "https://raw.githubusercontent.com/Saif-Smran/App-Store/main/public/appstore-banner.png",
+    "summary": "A modern mobile app store web application with category filtering, detailed app pages, and responsive design.",
+    "liveLink": "https://saif-s-app-store.web.app/",
+    "repoLink": "https://github.com/Saif-Smran/App-Store",
+    "mainTechStack": ["React", "Tailwind CSS", "React Router"],
+    "allTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Pages Deployment",
+      "DaisyUI"
+    ],
+    "description": "A React-based mobile app store showcasing category-wise app listings with detailed pages. Built to practice component-based architecture and client-side routing.",
+    "features": [
+      "Category-based browsing and filtering",
+      "Detailed app pages with images and descriptions",
+      "Fully responsive design using Tailwind CSS"
+    ],
+    "challenges": [
+      "Designing a consistent and intuitive UI for multiple categories",
+      "Managing dynamic routes with React Router for detail pages"
+    ],
+    "futurePlans": [
+      "Integrate real backend API for dynamic data",
+      "Add search and sorting functionality",
+      "Implement dark mode toggle"
+    ],
+    "date": "2024-05"
+  },
+  {
+    "name": "Gardening-Community",
+    "image": "https://raw.githubusercontent.com/Saif-Smran/Gardening-Community/main/public/gardening-banner.png",
+    "summary": "A social platform for gardening enthusiasts to connect, share tips, and build community.",
+    "liveLink": "https://gardening-community-cffec.web.app/",
+    "repoLink": "https://github.com/Saif-Smran/Gardening-Community-Clint",
+    "mainTechStack": ["React", "Tailwind CSS", "Firebase Authentication", "Firestore"],
+    "allTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Firebase Authentication",
+      "Firestore Database",
+      "Firebase Hosting",
+      "Vite",
+      "GitHub Actions (optional for CI/CD)"
+    ],
+    "description": "A community-focused web app for gardeners to register, post, comment, and connect. Uses Firebase for authentication and Firestore for real-time data.",
+    "features": [
+      "User registration and login with Firebase Auth",
+      "Post creation, editing, and sharing",
+      "Community feed with real-time updates and comments"
+    ],
+    "challenges": [
+      "Implementing secure user authentication with Firebase",
+      "Structuring Firestore data for posts and comments",
+      "Ensuring real-time UI updates with Firestore listeners"
+    ],
+    "futurePlans": [
+      "Add user profiles with avatars and bios",
+      "Enable liking or saving posts",
+      "Moderation tools for spam or abuse control"
+    ],
+    "date": "2024-06"
+  },
+  {
+    "name": "RestoEase",
+    "image": "https://i.ibb.c/hFHxdRYb/Leonardo-Phoenix-10-A-modern-and-clean-Git-Hub-profile-banner-f-1.jpg",
+    "summary": "A full-stack restaurant management system with user ordering, admin dashboard, and secure authentication.",
+    "liveLink": "https://resturent-management-clint.web.app",
+    "repoLink": "https://github.com/Saif-Smran/Restaurant-Management-Clint",
+    "mainTechStack": ["React", "Tailwind CSS", "Firebase Auth", "Node.js", "Express.js", "MongoDB"],
+    "allTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Firebase Authentication",
+      "Firebase Hosting",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT Authentication",
+      "Axios",
+      "Vercel Deployment",
+      "MongoDB Atlas"
+    ],
+    "description": "A production-ready restaurant management system where users can browse menus, place orders, and admins can manage foods, orders, and users securely.",
+    "features": [
+      "Customer-facing menu and order placement",
+      "Admin dashboard for managing foods, orders, and users",
+      "Firebase Authentication with JWT-based backend protection",
+      "MongoDB for persistent order and user data"
+    ],
+    "challenges": [
+      "Securing routes and JWT implementation",
+      "Building an intuitive admin dashboard with role-based access",
+      "Integrating Firebase Auth with a Node/Express backend"
+    ],
+    "futurePlans": [
+      "Add order status notifications via email",
+      "Improve UI/UX for both admin and customer dashboards",
+      "Enable multiple payment gateway integrations"
+    ],
+    "date": "2024-06"
+  }
+]

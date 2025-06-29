@@ -20,6 +20,8 @@ const Navbar = () => {
 
   const navItems = [
     { name: "About", href: "#about", icon: FaUser },
+    { name: "Education", href: "#education", icon: FaProjectDiagram },
+    { name: "Tech Stack", href: "#techstack", icon: FaCode },
     { name: "Projects", href: "#projects", icon: FaProjectDiagram },
     { name: "Contact", href: "#contact", icon: FaEnvelope },
   ];
@@ -27,9 +29,13 @@ const Navbar = () => {
   const handleNavClick = (href) => {
     setIsOpen(false);
     // Smooth scroll to section
-    const element = document.querySelector(href);
+    const sectionId = href.replace('#', '');
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
@@ -49,10 +55,14 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <a 
               href="#" 
-              className="flex items-center space-x-2 text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-blue-600 transition-all duration-300"
+              className="flex items-center text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-blue-600 transition-all duration-300"
             >
-              <FaCode className="text-blue-600 hover:rotate-12 transition-transform duration-300" />
-              <span>MyPortfolio</span>
+              <img 
+                src="/Logo.png" 
+                alt="Saif's Portfolio Logo" 
+                className="w-15 h-15 hover:scale-110 transition-transform duration-300" 
+              />
+              <span>Saif's Portfolio</span>
             </a>
           </div>
 
