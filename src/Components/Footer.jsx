@@ -12,9 +12,11 @@ import {
   FaUser,
   FaProjectDiagram
 } from 'react-icons/fa';
+// import { useTheme } from '../contexts/ThemeContext'; // Footer uses dark theme by default
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  // const { isDark } = useTheme(); // Footer uses dark theme by default
 
   const socialLinks = [
     { name: 'GitHub', icon: FaGithub, href: '#', color: 'hover:text-gray-900' },
