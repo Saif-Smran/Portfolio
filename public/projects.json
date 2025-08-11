@@ -1,71 +1,54 @@
 [
   {
-    "name": "App-Store",
-    "image": "https://raw.githubusercontent.com/Saif-Smran/App-Store/main/public/appstore-banner.png",
-    "summary": "A modern mobile app store web application with category filtering, detailed app pages, and responsive design.",
-    "liveLink": "https://saif-s-app-store.web.app/",
-    "repoLink": "https://github.com/Saif-Smran/App-Store",
-    "mainTechStack": ["React", "Tailwind CSS", "React Router"],
-    "allTechStack": [
+    "name": "PetConnect - A Pet Adoption & Care Platform",
+    "image": "https://i.ibb.co/BSmy01R/Screenshot-2025-07-25-114741.png",
+    "summary": "A full-stack platform that simplifies pet adoption, donations, and management with secure role-based access and a smooth user experience.",
+    "liveLink": "https://pet-connect-6d036.web.app/",
+    "repoLink": "https://github.com/Saif-Smran/PetConnect-Client",
+    "mainTechStack": [
       "React",
-      "React Router",
       "Tailwind CSS",
-      "Vite",
-      "GitHub Pages Deployment",
-      "DaisyUI"
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
     ],
-    "description": "A React-based mobile app store showcasing category-wise app listings with detailed pages. Built to practice component-based architecture and client-side routing.",
-    "features": [
-      "Category-based browsing and filtering",
-      "Detailed app pages with images and descriptions",
-      "Fully responsive design using Tailwind CSS"
-    ],
-    "challenges": [
-      "Designing a consistent and intuitive UI for multiple categories",
-      "Managing dynamic routes with React Router for detail pages"
-    ],
-    "futurePlans": [
-      "Integrate real backend API for dynamic data",
-      "Add search and sorting functionality",
-      "Implement dark mode toggle"
-    ],
-    "date": "2024-05"
-  },
-  {
-    "name": "Gardening-Community",
-    "image": "https://raw.githubusercontent.com/Saif-Smran/Gardening-Community/main/public/gardening-banner.png",
-    "summary": "A social platform for gardening enthusiasts to connect, share tips, and build community.",
-    "liveLink": "https://gardening-community-cffec.web.app/",
-    "repoLink": "https://github.com/Saif-Smran/Gardening-Community-Clint",
-    "mainTechStack": ["React", "Tailwind CSS", "Firebase Authentication", "Firestore"],
     "allTechStack": [
       "React",
       "React Router",
       "Tailwind CSS",
       "DaisyUI",
       "Firebase Authentication",
-      "Firestore Database",
       "Firebase Hosting",
-      "Vite",
-      "GitHub Actions (optional for CI/CD)"
+      "Cloud Firestore",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Stripe Integration",
+      "JWT Authentication",
+      "ImgBB API",
+      "Axios",
+      "Vercel Deployment",
+      "MongoDB Atlas"
     ],
-    "description": "A community-focused web app for gardeners to register, post, comment, and connect. Uses Firebase for authentication and Firestore for real-time data.",
+    "description": "PetConnect is a feature-rich full-stack web app designed to connect pet seekers, rescuers, and donors on a single platform. Users can browse pets, adopt them, contribute to campaigns, and manage their own pets or shelter campaigns through secure role-based dashboards.",
     "features": [
-      "User registration and login with Firebase Auth",
-      "Post creation, editing, and sharing",
-      "Community feed with real-time updates and comments"
+      "Role-based dashboards for Admin, Pet Owner, and General User",
+      "Secure pet adoption system with Firebase Auth & JWT",
+      "Stripe donation integration with campaign management"
     ],
     "challenges": [
-      "Implementing secure user authentication with Firebase",
-      "Structuring Firestore data for posts and comments",
-      "Ensuring real-time UI updates with Firestore listeners"
+      "Implementing scalable and secure role-based access control",
+      "Integrating Stripe for real-time donation processing",
+      "Completing the entire full-stack build and deployment in just 8 days"
     ],
     "futurePlans": [
-      "Add user profiles with avatars and bios",
-      "Enable liking or saving posts",
-      "Moderation tools for spam or abuse control"
+      "Enable email notifications for adoption and donations",
+      "Add pet health tracking and medical history features",
+      "Introduce shelter/NGO registration and verification"
     ],
-    "date": "2024-06"
+    "date": "2025-07"
   },
   {
     "name": "RestoEase",
@@ -73,7 +56,14 @@
     "summary": "A full-stack restaurant management system with user ordering, admin dashboard, and secure authentication.",
     "liveLink": "https://resturent-management-clint.web.app",
     "repoLink": "https://github.com/Saif-Smran/Restaurant-Management-Clint",
-    "mainTechStack": ["React", "Tailwind CSS", "Firebase Auth", "Node.js", "Express.js", "MongoDB"],
+    "mainTechStack": [
+      "React",
+      "Tailwind CSS",
+      "Firebase Auth",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
     "allTechStack": [
       "React",
       "React Router",
@@ -108,5 +98,78 @@
       "Enable multiple payment gateway integrations"
     ],
     "date": "2024-06"
+  },
+  {
+    "name": "Gardening-Community",
+    "image": "https://raw.githubusercontent.com/Saif-Smran/Gardening-Community/main/public/gardening-banner.png",
+    "summary": "A social platform for gardening enthusiasts to connect, share tips, and build community.",
+    "liveLink": "https://gardening-community-cffec.web.app/",
+    "repoLink": "https://github.com/Saif-Smran/Gardening-Community-Clint",
+    "mainTechStack": [
+      "React",
+      "Tailwind CSS",
+      "Firebase Authentication",
+      "Firestore"
+    ],
+    "allTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Firebase Authentication",
+      "Firestore Database",
+      "Firebase Hosting",
+      "Vite",
+      "GitHub Actions (optional for CI/CD)"
+    ],
+    "description": "A community-focused web app for gardeners to register, post, comment, and connect. Uses Firebase for authentication and Firestore for real-time data.",
+    "features": [
+      "User registration and login with Firebase Auth",
+      "Post creation, editing, and sharing",
+      "Community feed with real-time updates and comments"
+    ],
+    "challenges": [
+      "Implementing secure user authentication with Firebase",
+      "Structuring Firestore data for posts and comments",
+      "Ensuring real-time UI updates with Firestore listeners"
+    ],
+    "futurePlans": [
+      "Add user profiles with avatars and bios",
+      "Enable liking or saving posts",
+      "Moderation tools for spam or abuse control"
+    ],
+    "date": "2024-06"
+  },
+  {
+    "name": "App-Store",
+    "image": "https://raw.githubusercontent.com/Saif-Smran/App-Store/main/public/appstore-banner.png",
+    "summary": "A modern mobile app store web application with category filtering, detailed app pages, and responsive design.",
+    "liveLink": "https://saif-s-app-store.web.app/",
+    "repoLink": "https://github.com/Saif-Smran/App-Store",
+    "mainTechStack": ["React", "Tailwind CSS", "React Router"],
+    "allTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Pages Deployment",
+      "DaisyUI"
+    ],
+    "description": "A React-based mobile app store showcasing category-wise app listings with detailed pages. Built to practice component-based architecture and client-side routing.",
+    "features": [
+      "Category-based browsing and filtering",
+      "Detailed app pages with images and descriptions",
+      "Fully responsive design using Tailwind CSS"
+    ],
+    "challenges": [
+      "Designing a consistent and intuitive UI for multiple categories",
+      "Managing dynamic routes with React Router for detail pages"
+    ],
+    "futurePlans": [
+      "Integrate real backend API for dynamic data",
+      "Add search and sorting functionality",
+      "Implement dark mode toggle"
+    ],
+    "date": "2024-05"
   }
 ]

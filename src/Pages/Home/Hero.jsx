@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiOutlineDownload, HiOutlineEye } from 'react-icons/hi';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaReact, FaNodeJs, FaJs } from 'react-icons/fa';
-import { SiMongodb } from 'react-icons/si';
+import { SiMongodb, SiNextdotjs, SiMysql, SiTypescript } from 'react-icons/si';
 import { useTheme } from '../../contexts/ThemeContext';
 
 const Hero = () => {
@@ -66,6 +66,14 @@ const Hero = () => {
                                         ? 'bg-gray-800/60 border-gray-600/50 hover:border-blue-400/50'
                                         : 'bg-white/60 border-gray-200/50 hover:border-blue-300/50'
                                     }`}>
+                                    <SiNextdotjs className={`w-5 h-5 ${isDark ? 'text-white' : 'text-black'} group-hover:scale-110 transition-transform duration-300`} />
+                                    <span className={`text-sm font-medium ${isDark ? 'text-gray-200' : 'text-gray-700'
+                                        }`}>Next.js</span>
+                                </div>
+                                <div className={`flex items-center space-x-2 px-4 py-2 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-105 group ${isDark
+                                        ? 'bg-gray-800/60 border-gray-600/50 hover:border-blue-400/50'
+                                        : 'bg-white/60 border-gray-200/50 hover:border-blue-300/50'
+                                    }`}>
                                     <FaNodeJs className="w-5 h-5 text-green-400 group-hover:scale-110 transition-transform duration-300" />
                                     <span className={`text-sm font-medium ${isDark ? 'text-gray-200' : 'text-gray-700'
                                         }`}>Node.js</span>
@@ -82,9 +90,25 @@ const Hero = () => {
                                         ? 'bg-gray-800/60 border-gray-600/50 hover:border-blue-400/50'
                                         : 'bg-white/60 border-gray-200/50 hover:border-blue-300/50'
                                     }`}>
+                                    <SiTypescript className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform duration-300" />
+                                    <span className={`text-sm font-medium ${isDark ? 'text-gray-200' : 'text-gray-700'
+                                        }`}>TypeScript</span>
+                                </div>
+                                <div className={`flex items-center space-x-2 px-4 py-2 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-105 group ${isDark
+                                        ? 'bg-gray-800/60 border-gray-600/50 hover:border-blue-400/50'
+                                        : 'bg-white/60 border-gray-200/50 hover:border-blue-300/50'
+                                    }`}>
                                     <SiMongodb className="w-5 h-5 text-green-500 group-hover:scale-110 transition-transform duration-300" />
                                     <span className={`text-sm font-medium ${isDark ? 'text-gray-200' : 'text-gray-700'
                                         }`}>MongoDB</span>
+                                </div>
+                                <div className={`flex items-center space-x-2 px-4 py-2 backdrop-blur-sm rounded-full border transition-all duration-300 hover:scale-105 group ${isDark
+                                        ? 'bg-gray-800/60 border-gray-600/50 hover:border-blue-400/50'
+                                        : 'bg-white/60 border-gray-200/50 hover:border-blue-300/50'
+                                    }`}>
+                                    <SiMysql className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
+                                    <span className={`text-sm font-medium ${isDark ? 'text-gray-200' : 'text-gray-700'
+                                        }`}>MySQL</span>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +116,7 @@ const Hero = () => {
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <a
-                                href="https://drive.google.com/uc?export=download&id=1KYVFP_rU0gR-J7-xglm5mLTvMVbr5837"
+                                href="https://drive.google.com/uc?export=download&id=1tweaUqAIBuzMmPBPtkuMDsKsuxiyq7ma"
                                 download="Saif_Smran_Resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"

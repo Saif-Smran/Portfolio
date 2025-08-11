@@ -1,6 +1,6 @@
 # Saif Smran - Portfolio Website
 
-A modern, responsive portfolio website showcasing my skills, projects, and professional journey as a full-stack developer. Built with React, Vite, and Tailwind CSS, featuring a beautiful dark/light theme toggle and smooth animations.
+A modern, responsive portfolio website showcasing my skills, projects, and professional journey as a full-stack developer. Built with React, Vite, and Tailwind CSS, now featuring a dark/light theme toggle and scroll-triggered animations powered by AOS.
 
 ## 🌐 Live Demo
 
@@ -10,7 +10,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 
 - **Modern Responsive Design**: Fully responsive across all devices with mobile-first approach
 - **Dark/Light Theme Toggle**: Seamless theme switching with smooth transitions
-- **Smooth Animations**: Engaging micro-interactions and scroll animations
+- **Smooth Animations**: Engaging micro-interactions and scroll animations (AOS)
 - **Section Navigation**: Quick navigation with smooth scrolling to all sections
 - **Interactive Project Showcase**: Detailed project cards with modal views
 - **Contact Integration**: Multiple contact methods with social media links
@@ -29,16 +29,20 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 
 ### Frontend
 - **React 19** - Latest React features and performance improvements
+- **Next.js** - React framework for hybrid SSR/SSG (recently added to stack)
 - **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe development (recently added to stack)
 - **Tailwind CSS 4** - Utility-first CSS framework
 - **DaisyUI** - Beautiful UI components
 - **React Router DOM** - Client-side routing
 - **React Icons** - Comprehensive icon library
+- **AOS** - Animate On Scroll library
 
 ### Backend & Database (Projects)
 - **Node.js** - Server-side JavaScript runtime
 - **Express.js** - Web application framework
 - **MongoDB** - NoSQL database
+- **MySQL** - Relational database
 - **Mongoose** - MongoDB object modeling
 - **JWT** - Authentication and authorization
 
@@ -58,8 +62,8 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/My-Portfolio.git
-cd My-Portfolio
+git clone https://github.com/Saif-Smran/Portfolio.git
+cd Portfolio
 ```
 
 2. Install dependencies
@@ -112,7 +116,14 @@ src/
 └── assets/                 # Static assets
 ```
 
-## 🎨 Design Features
+## � Animations
+
+Scroll-triggered animations are implemented using AOS (Animate On Scroll):
+- Initialized once in `src/main.jsx`.
+- Sections/components use `data-aos` attributes, e.g., `data-aos="fade-up"`, `data-aos-delay="150"`.
+- You can customize duration, easing, offset in the AOS init, and per-element delays via attributes.
+
+## �🎨 Design Features
 
 - **Custom Logo**: Personalized branding throughout the site
 - **Consistent Theme**: Cohesive color scheme and typography
@@ -122,9 +133,9 @@ src/
 
 ## 📧 Contact Information
 
-- **Email**: saifsmran03@gmail.com
+- **Email**: smrangb@gmail.com
 - **Phone**: +8801521468295
-- **LinkedIn**: [Saif Smran](https://linkedin.com/in/saifsmran)
+- **LinkedIn**: [A H M Saif Smran](https://www.linkedin.com/in/a-h-m-saif-smran)
 - **Location**: Dhaka, Bangladesh
 
 ## 🤝 Contributing

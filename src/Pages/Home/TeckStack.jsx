@@ -14,7 +14,7 @@ import {
     FaServer,
     FaFileCode
 } from 'react-icons/fa';
-import { SiTailwindcss, SiExpress, SiMongodb, SiFirebase, SiC, SiCplusplus, SiVite } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiMongodb, SiFirebase, SiC, SiCplusplus, SiVite, SiNextdotjs, SiMysql, SiTypescript } from 'react-icons/si';
 import { useTheme } from '../../contexts/ThemeContext';
 
 const TechStack = () => {
@@ -30,6 +30,7 @@ const TechStack = () => {
                 { name: "CSS3", icon: FaCss3Alt, color: "text-blue-600", level: 85 },
                 { name: "JavaScript", icon: FaJs, color: "text-yellow-400", level: 75 },
                 { name: "React", icon: FaReact, color: "text-cyan-400", level: 70 },
+                { name: "Next.js", icon: SiNextdotjs, color: "text-black", level: 60 },
                 { name: "TailwindCSS", icon: SiTailwindcss, color: "text-teal-400", level: 80 }
             ]
         },
@@ -41,6 +42,7 @@ const TechStack = () => {
                 { name: "Node.js", icon: FaNodeJs, color: "text-green-600", level: 65 },
                 { name: "Express.js", icon: SiExpress, color: "text-gray-600", level: 60 },
                 { name: "MongoDB", icon: SiMongodb, color: "text-green-500", level: 60 },
+                { name: "MySQL", icon: SiMysql, color: "text-blue-600", level: 55 },
                 { name: "Firebase", icon: SiFirebase, color: "text-yellow-400", level: 55 }
             ]
         },
@@ -51,7 +53,8 @@ const TechStack = () => {
             techs: [
                 { name: "C", icon: SiC, color: "text-blue-700", level: 75 },
                 { name: "C++", icon: SiCplusplus, color: "text-blue-700", level: 55 },
-                { name: "JavaScript", icon: FaJs, color: "text-yellow-400", level: 75 }
+                { name: "JavaScript", icon: FaJs, color: "text-yellow-400", level: 75 },
+                { name: "TypeScript", icon: SiTypescript, color: "text-blue-500", level: 60 }
             ]
         },
         {
